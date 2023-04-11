@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Waktu pembuatan: 10 Apr 2023 pada 10.52
+-- Waktu pembuatan: 10 Apr 2023 pada 18.01
 -- Versi server: 10.4.25-MariaDB
 -- Versi PHP: 7.4.30
 
@@ -32,18 +32,23 @@ CREATE TABLE `user_fadhil` (
   `nama_fadhil` varchar(50) NOT NULL,
   `username_fadhil` varchar(50) NOT NULL,
   `password_fadhil` varchar(255) NOT NULL,
-  `level_fadhil` int(1) NOT NULL
+  `level_fadhil` int(1) NOT NULL,
+  `last_login` timestamp NOT NULL DEFAULT current_timestamp() ON UPDATE current_timestamp()
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Dumping data untuk tabel `user_fadhil`
 --
 
-INSERT INTO `user_fadhil` (`id_fadhil`, `nama_fadhil`, `username_fadhil`, `password_fadhil`, `level_fadhil`) VALUES
-(2, 'Arya ppp', 'pace', 'adcd7048512e64b48da55b027577886ee5a36350', 2),
-(4, 'yosua alvin', 'yos', '123', 1),
-(5, 'alif rah', 'ipsum', '123', 0),
-(6, 'FADHIL PRAWIRA', 'fadhilp', 'adcd7048512e64b48da55b027577886ee5a36350', 0);
+INSERT INTO `user_fadhil` (`id_fadhil`, `nama_fadhil`, `username_fadhil`, `password_fadhil`, `level_fadhil`, `last_login`) VALUES
+(5, 'ALIF RAHMAT', 'alifrahmat', '1f82ea75c5cc526729e2d581aeb3aeccfef4407e', 2, '2023-04-10 15:23:56'),
+(6, 'FADHIL PRAWIRA', 'fadhilprawira', 'a346bc80408d9b2a5063fd1bddb20e2d5586ec30', 2, '2023-04-10 15:24:17'),
+(7, 'Marwan', 'marwan_elektro', '1f82ea75c5cc526729e2d581aeb3aeccfef4407e', 0, '2023-04-10 15:23:47'),
+(8, 'Maman Somantri', 'mmsomantri', '1f82ea75c5cc526729e2d581aeb3aeccfef4407e', 1, '2023-04-10 15:23:31'),
+(9, 'Yosua Alvin', 'yosua', '5e96ee8f9c9efe8b0c7dc16098436c8b4a58d753', 1, '2023-04-10 15:25:05'),
+(10, 'Aghus Sofwan', 'aghuss', '1f82ea75c5cc526729e2d581aeb3aeccfef4407e', 1, '2023-04-10 15:26:44'),
+(12, 'M. Arfan', 'marfan', 'a346bc80408d9b2a5063fd1bddb20e2d5586ec30', 1, '2023-04-10 15:41:01'),
+(15, 'Arya brama', 'pace', '1f82ea75c5cc526729e2d581aeb3aeccfef4407e', 2, '2023-04-10 16:01:24');
 
 --
 -- Indexes for dumped tables
@@ -63,7 +68,7 @@ ALTER TABLE `user_fadhil`
 -- AUTO_INCREMENT untuk tabel `user_fadhil`
 --
 ALTER TABLE `user_fadhil`
-  MODIFY `id_fadhil` int(3) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `id_fadhil` int(3) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

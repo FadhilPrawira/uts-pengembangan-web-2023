@@ -1,26 +1,44 @@
-<?php
-$db_name = "fadhil";
-$table_name = "user_fadhil";
-$db_username = "root";
-$db_password = "MyN3wP4ssw0rd";
-$server_name = "localhost";
-$conn = new mysqli($server_name, $db_username, $db_password, $db_name);
-$sql = "SELECT username, password FROM ".$table_name." WHERE id_fadhil = ".$_GET["password"];
-?>
-
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
-</head>
+	<!-- Head start here -->
+	<head>
+		<?php $this->load->view('_partials/header.php'); ?>	</head>
+	<!-- Head end here -->
+<!-- Body start here -->
 <body>
-    <h1>Login</h1>
-    <form action="" method="GET">
-        <input type="text">Username
-        <input type="password">Password
-    </form>
+		<?php $this->load->view('_partials/navbar.php'); ?>
+
+		<!-- Content start here -->
+        <div class="container text-center my-5">
+        <?php if ($this->session->flashdata('message_login_error')): ?>
+				<div class="alert alert-danger mt-4" role="alert">
+					<?php echo $this->session->flashdata('message_login_error'); ?>
+				</div>
+				<?php endif; ?>
+        <main class="form-signin w-100 m-auto">
+            <form method="POST" action="">
+                <img class="mb-4" src="<?= site_url('assets/images/Undip.png');?>" alt="" width="100">
+                <h1 class="h3 mb-3 fw-normal">Please log in</h1>
+
+                <div class="form-floating">
+                <input type="username" class="form-control" id="floatingInput" placeholder="Username" name="username">
+                <label for="floatingInput">Username</label>
+                </div>
+                <div class="form-floating">
+                <input type="password" class="form-control" id="floatingPassword" placeholder="Password" name="password">
+                <label for="floatingPassword">Password</label>
+                </div>
+
+                <div class="checkbox mb-3">
+                <label>
+                    <input type="checkbox" value="remember_me" name="remember_me"> Remember me
+                </label>
+                </div>
+                <button class="w-100 btn btn-lg btn-primary" type="submit" name="submit" value="login">Log in</button>
+            </form>
+        </main>
+        </div>
+        <?php $this->load->view('_partials/footer.php'); ?>
+
 </body>
 </html>

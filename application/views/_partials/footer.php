@@ -1,5 +1,5 @@
 <!-- Footer start here -->
-		<div class="container-fluid">
+		<div class="container-fluid" data-bs-theme="dark">
 			<footer class="row row-cols-2 py-5 mb-0 border-top" style="background-color: #001349;">
 				<div class="col mb-3 text-center text-white">
 					<img src="<?= site_url('assets/images/Logo-Footer-Undip-ID.png');?>" alt="Logo Footer UNDIP" width="93" height="106" >

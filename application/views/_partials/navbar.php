@@ -1,41 +1,44 @@
-<!-- Navbar start here -->
+	<!-- Navbar start here -->
 		<nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #001349;">
 			<div class="container-fluid">
 				<a class="navbar-brand" href="<?php echo site_url('civitas/index'); ?>">
-					<img src="<?= site_url('assets/images/Logo-Undip.png');?>" width="235" height="55" alt="Website UPT civitas dan Percetakan" id="logo" data-height-percentage="60" data-actual-width="235" data-actual-height="55">
+				<img src="<?= site_url('assets/images/logobaru.png');?>" width="235" height="55" alt="Website UPT civitas dan Percetakan" id="logo" data-height-percentage="60" data-actual-width="235" data-actual-height="55">
 				</a>
-				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-					<span class="navbar-toggler-icon"></span>
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
 				</button>
-				<div class="collapse navbar-collapse" id="navbarNav">
-					<ul class="nav nav-tabs col-lg-5">
-						<li class="nav-item">
-							<a class="nav-link<?php if($active == 'index') echo ' text-dark active';else echo ' text-white'; ?>"<?php if($active == 'index') echo 'aria-current="page"';?> href="<?php echo site_url('civitas/index'); ?>">Home</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link<?php if($active == 'dashboard') echo ' text-dark active';else echo ' text-white';?>"<?php if($active == 'dashboard') echo 'aria-current="page"';?> href="<?php echo site_url('civitas/dashboard'); ?>">Lihat Data</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link <?php if($active == 'search') echo ' text-dark active';else echo ' text-white';?>"<?php if($active == 'search') echo 'aria-current="page"';?> href="<?php echo site_url('civitas/search'); ?>">Cari Data</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link<?php if($active == 'add') echo ' text-dark active';else echo ' text-white';?>"<?php if($active == 'add') echo 'aria-current="page"';?> href="<?php echo site_url('civitas/add'); ?>">Tambah Data</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link<?php if($active == 'about_us') echo ' text-dark active';else echo ' text-white';?>"<?php if($active == 'about_us') echo 'aria-current="page"';?> href="<?php echo site_url('civitas/about_us'); ?>">About Us</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link<?php if($active == 'login') echo ' text-dark active';else echo ' text-white';?>"<?php if($active == 'login') echo 'aria-current="page"';?> href="<?php echo site_url('civitas/login'); ?>">Login</a>
-						</li>
-					</ul>
-					<ul class="navbar-nav nav-tabs col-lg-6 justify-content-lg-end">
-						<li class="nav-item">
-							<a class="nav-link<?php if($active == 'contact_me') echo ' text-dark active';else echo ' text-white' ?>" <?php if($active == 'contact_me') echo 'aria-current="page"';?> href="<?php echo site_url('civitas/contact_me'); ?>">Contact Me</a>
-						</li>
-					</ul>
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav me-auto mb-2 mb-lg-0 nav-tabs">
+					<li class="nav-item">
+					<a class="nav-link<?php if($active == 'index') echo ' text-dark active';else echo ' text-white'; ?>" <?php if($active == 'index') echo 'aria-current="page"';?> href="<?php echo site_url('civitas/index'); ?>">Home </a>
+					</li>
+					<li class="nav-item">
+					<a class="nav-link<?php if($active == 'dashboard') echo ' text-dark active';else echo ' text-white';?>" <?php if($active == 'dashboard') echo 'aria-current="page"';?> href="<?php echo site_url('civitas/dashboard'); ?>">Lihat Data </a>
+					</li>
+					<li class="nav-item">
+					<a class="nav-link<?php if($active == 'search') echo ' text-dark active';else echo ' text-white';?>" <?php if($active == 'search') echo 'aria-current="page"';?> href="<?php echo site_url('civitas/search'); ?>">Cari Data </a>
+					</li>
+					<li class="nav-item">
+					<a class="nav-link<?php if($active == 'add') echo ' text-dark active';else echo ' text-white';?>" <?php if($active == 'add') echo 'aria-current="page"';?> href="<?php echo site_url('civitas/add'); ?>">Tambah Data </a>
+					</li>
+					<li class="nav-item">
+					<a class="nav-link<?php if($active == 'about_us') echo ' text-dark active';else echo ' text-white';?>" <?php if($active == 'about_us') echo 'aria-current="page"';?> href="<?php echo site_url('civitas/about_us'); ?>">About Us </a>
+					</li>
+					<li class="nav-item">
+					<a class="nav-link<?php if($active == 'contact_me') echo ' text-dark active';else echo ' text-white' ?>" <?php if($active == 'contact_me') echo 'aria-current="page"';?> href="<?php echo site_url('civitas/contact_me'); ?>">Contact Me </a>
+					</li>
+				</ul>
+				<ul class="navbar-nav d-flex me-2 nav-tabs">
+					<li class="nav-item">
+					<a class="nav-link<?php if($active == 'login') echo ' text-dark active';else echo ' text-white';?>" <?php if($active == 'login') echo 'aria-current="page"';?> href="<?php echo site_url('civitas/login'); ?>">Login</a>
+					</li>
+					<li class="nav-item">
+					<a class="nav-link<?php if($active == 'sign up') echo ' text-dark active';else echo ' text-white';?>" <?php if($active == 'sign up') echo 'aria-current="page"';?> href="<?php echo site_url('civitas/signup'); ?>">Sign Up</a>
+					</li>
+				</ul>
 				</div>
 			</div>
-		</nav>
+		</nav>		
 		<!-- Navbar end here -->
 
 		<!-- Breadcrumb start here -->
@@ -70,6 +73,14 @@
 						<a href="<?= site_url('civitas')?>">Home</a>
 					</li>
 					<li class="breadcrumb-item active" aria-current="page"><?= 'Contact Me';?></li>
+				<?php elseif ($active=='login') :?><li class="breadcrumb-item">
+						<a href="<?= site_url('civitas')?>">Home</a>
+					</li>
+					<li class="breadcrumb-item active" aria-current="page"><?= 'Login';?></li>
+				<?php elseif ($active=='sign up') :?><li class="breadcrumb-item">
+						<a href="<?= site_url('civitas')?>">Home</a>
+					</li>
+					<li class="breadcrumb-item active" aria-current="page"><?= 'Sign up';?></li>
 				<?php else :?><li class="breadcrumb-item">
 						<a href="<?= site_url('civitas')?>">Home</a>
 					</li>

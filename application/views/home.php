@@ -25,39 +25,38 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 
 					<!-- content elektro card start here -->
-					<div class="container text-center">
-					<div class="row">
-						<div class="col">
-						<div class="card" style="width: 18rem;">
-							<img src="http://elektro.ft.undip.ac.id/v3/wp-content/uploads/2016/08/ISO_9001-2015.jpg" class="card-img-top" alt="...">
-							<div class="card-body">
-							<h5 class="card-title">ISO 9001:2015</h5>
-							<p class="card-text">Teknik Elektro Universitas Diponegoro telah memenuhi standar&nbsp; ISO 9001:2015 sebagai salah satu&nbsp; standar internasional dibidang sistem manajemen mutu.</p>
+					<div class="container my-5">
+						<div class="row">
+						<div class="card-group">
+							<div class="card">
+								<img src="http://elektro.ft.undip.ac.id/v3/wp-content/uploads/2016/08/ISO_9001-2015.jpg" class="card-img-top" alt="...">
+								<div class="card-body">
+								<h5 class="card-title">ISO 9001:2015</h5>
+								<p class="card-text">Teknik Elektro Universitas Diponegoro telah memenuhi standar ISO 9001:2015 sebagai salah satu standar internasional dibidang sistem manajemen mutu.</p>
+								</div>
+						
+							</div>
+							<div class="card">
+								<img src="http://elektro.ft.undip.ac.id/v3/wp-content/uploads/2016/08/tuevrl-58147low.jpg" class="card-img-top" alt="...">
+								<div class="card-body">
+								<h5 class="card-title">TÜV Rheinland Certified</h5>
+								<p class="card-text">Teknik Elektro Universitas Diponegoro telah tersertifikasi TÜV Rheinland dalam penerapan standar mutu ISO 9001:2015</p>
+								</div>
+								
+							</div>
+							<div class="card">
+								<img src="http://elektro.ft.undip.ac.id/v3/wp-content/uploads/2016/08/logobanFIXsize.png" class="card-img-top" alt="Akreditasi Unggul BAN-PT">
+								<div class="card-body">
+								<h5 class="card-title">AKREDITASI UNGGUL BAN-PT</h5>
+								<p class="card-text">Teknik Elektro Universitas Diponegoro merupakan salah satu program studi Teknik Elektro terbaik di Indonesia dengan terus mempertahankan akreditasi Unggul.</p>
+								</div>
+							
+							</div>
 							</div>
 						</div>
-						</div>
-						<div class="col">
-						<div class="card" style="width: 18rem;">
-							<img src="http://elektro.ft.undip.ac.id/v3/wp-content/uploads/2016/08/tuevrl-58147low.jpg" class="card-img-top" alt="...">
-							<div class="card-body">
-							<h5 class="card-title">TÜV Rheinland Certified</h5>
-							<p class="card-text">Teknik Elektro Universitas Diponegoro telah tersertifikasi TÜV Rheinland dalam penerapan standar mutu ISO 9001:2015</p>
-							</div>
-						</div>
-						</div>
-						<div class="col">
-						<div class="card" style="width: 18rem;">
-							<img src="http://elektro.ft.undip.ac.id/v3/wp-content/uploads/2016/08/logobanFIXsize.png" class="card-img-top" alt="...">
-							<div class="card-body">
-							<h5 class="card-title">AKREDITASI UNGGUL BAN-PT</h5>
-							<p class="card-text">Teknik Elektro Universitas Diponegoro merupakan salah satu program studi Teknik Elektro terbaik di Indonesia dengan terus mempertahankan akreditasi Unggul.</p>
-							</div>
-						</div>
-						</div>
-					</div>
 					</div>
 					<!-- content elektro card end here -->
-				
+			
 					<a href="<?= site_url('civitas/dashboard');?>" class="text-white">  
 						<button class="btn btn-primary btn-lg" type="button">Lihat Data Civitas</button>
 					</a>
